@@ -1,0 +1,19 @@
+.nav{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  align-items: center;
+}
+.logo{
+  display: flex;
+  gap: 1rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  &__text{
+    font-style: 18px;
+    color: #0C54A0;
+    font-weight: 600;
+  }
+}
