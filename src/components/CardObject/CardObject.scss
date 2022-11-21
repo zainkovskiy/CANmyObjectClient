@@ -9,6 +9,11 @@
     grid-template-columns: 200px 1fr 60px 60px 60px;
     grid-gap: 1rem;
   }
+  &__flex{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0.5rem;
+  }
   &__top{
     padding: 1rem;
     border-radius: 5px 5px 0 0;
@@ -43,5 +48,16 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media(max-width: 760px){
+  .card__top{
+    padding: 0.5rem;
+  }
+  .card__bottom{
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

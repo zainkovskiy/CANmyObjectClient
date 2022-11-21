@@ -2,10 +2,12 @@ import React from "react";
 import moment from "moment/moment";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 import './CardObject.scss';
 
 export const CardObject = ({ card }) => {
+  const media = useMediaQuery('(min-width: 760px)');
   return (
     <div className="card">
       {/* <div className="card__header card__grid-template">
@@ -15,7 +17,7 @@ export const CardObject = ({ card }) => {
         <span className="text card__title">Тренд</span>
         <span className="text card__title">Реклама</span>
       </div> */}
-      <div className="card__top card__grid-template">
+      <div className={`card__top ${media ? 'card__grid-template' : 'card__flex'}`}>
         <img
           className="card__photo"
           src={card.photo} alt="object"
